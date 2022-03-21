@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="icon" href="/assets/img/pikachu.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <br />
+    <br />
+    <div class="pokedex-container">
+      <div class="pokedex-img">
+        <div class="img-pok">
+          <h1>Pokemón</h1>
+          <br />
+          <div class="img-cont">
+            <img
+              class="pokemon"
+              id="pokeImg"
+              src="/assets/img/pokeball.png"
+              alt=""
+            />
+          </div>
+          <div class="decoration1"></div>
+          <br>
+          <div class="decoration-container">
+            <div class="decoration2"></div>
+            <div class="decoration3"></div>
+            <div class="decoration4"></div>
+          </div>
+          <br>
+          <div class="decoration5"></div>
+        </div>
+      </div>
+      <div class="pokedex-desc">
+        <div class="description">
+          <input
+            type="text"
+            id="pokeName"
+            class="input-pok"
+            placeholder="Nombre pokemón"
+          />
+          <div class="desc">
+            <h3>Nombre:</h3>
+            <h3 id="nombre">-</h3>
+          </div>
+
+          <div class="desc">
+            <h3>Tipo:</h3>
+            <h3 id="tipo">-</h3>
+          </div>
+
+          <div class="desc">
+            <h3>Estadisticas:</h3>
+            <h3>
+              Peso
+              <h3 id="peso">-</h3>
+            </h3>
+            <h3>
+              altura
+              <h3 id="altura">-</h3>
+            </h3>
+          </div>
+
+          <div class="desc">
+            <h3>Movimientos:</h3>
+            <h3 id="movimientos">-</h3>
+          </div>
+
+          <button class="btn-pok" onclick="{fetchPokemon()}">
+            Buscar pokemon
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
