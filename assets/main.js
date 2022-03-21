@@ -39,6 +39,3 @@ const nombrePok = (nombre,tipo,peso,altura,movimientos) => {
   document.getElementById("altura").innerHTML = altura;
   document.getElementById("movimientos").innerHTML = movimientos;
   };
-
-
-console.log(pokeName);
